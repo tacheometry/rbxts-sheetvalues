@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/sheetvalues",
-	"version": "2.0.3",
+	"version": "2.0.3-ts.1",
 	"description": "Use Google Sheets as a live value updater for Roblox games. roblox-ts typings for SheetValues by boatbomber",
 	"homepage": "https://devforum.community/t/364",
 	"repository": "github:tacheometry/rbxts-sheetvalues",
