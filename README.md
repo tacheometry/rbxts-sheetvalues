@@ -14,8 +14,32 @@ Run `npm i @rbxts/sheetvalues` in your project directory.
 
 ## Usage
 
-```ts
+With a sheet like this:
 
+| Name | SomeKey | SomeOtherKey |
+| ---- | ------- | ------------ |
+| Foo  | 50      | test         |
+| Bar  | 90      | test2        |
+
+One can extract values with the following code:
+
+```ts
+import SheetValues from "@rbxts/sheetvalues";
+
+// The type parameter represents the sheet
+const sheet = new SheetValues<{
+  Foo: {
+    SomeKey: number;
+    SomeOtherKey: string;
+  };
+  Bar: {
+    SomeKey: number;
+    SomeOtherKey: string;
+  };
+}>("Spread id extracted from the URL");
+
+const a = sheet.Values.Foo.SomeKey; // 50
+const b = sheet.Values.Bar.SomeOtherKey; // "test2"
 ```
 
 ---
