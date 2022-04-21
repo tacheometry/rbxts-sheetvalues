@@ -1,15 +1,26 @@
 {
-    "name": "@boatbomber/sheetvalues",
-    "version": "2.0.3",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/boatbomber/SheetValues.git"
-    },
-    "contributors": [
-        "boatbomber"
-    ],
-    "bugs": {
-        "url": "https://github.com/boatbomber/SheetValues/issues"
-    }
+	"name": "@rbxts/sheetvalues",
+	"version": "2.0.3",
+	"description": "Use Google Sheets as a live value updater for Roblox games. roblox-ts typings for SheetValues by boatbomber",
+	"homepage": "https://devforum.community/t/364",
+	"repository": "github:tacheometry/rbxts-sheetvalues",
+	"main": "src/init.lua",
+	"scripts": {},
+	"keywords": [
+		"roblox-ts",
+		"roblox"
+	],
+	"author": "boatbomber",
+	"license": "MIT",
+	"types": "src/index.d.ts",
+	"files": [
+		"src/*"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "^1.3.3-types.1",
+		"@rbxts/types": "^1.0.577"
+	}
 }
