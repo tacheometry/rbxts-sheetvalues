@@ -1,4 +1,21 @@
-declare class SheetValues<V extends Record<string, any>> {
+type SheetValueType =
+	| number
+	| string
+	| any[]
+	| Record<string, any>
+	| Vector3
+	| Vector2
+	| UDim2
+	| UDim
+	| Color3
+	| BrickColor
+	| CFrame
+	| EnumItem
+	| Rect;
+
+declare class SheetValues<
+	V extends Record<string, Record<string, SheetValueType>>
+> {
 	constructor(SpreadId: string, SheetId?: string);
 
 	/**
